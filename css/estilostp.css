@@ -403,6 +403,9 @@ h4{
     transform: perspective(500px) rotateY(180deg);
         
 }
+.card p{
+    font-weight: bold;
+}
 .card:hover .front{
     transform: perspective(500px) rotateY(180deg);
 
@@ -415,8 +418,27 @@ h4{
     color:whitesmoke
 }
 
+.noticias{
+    padding: 50px;
+}
+    .noticias h3{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        font-size: 2rem;
+    }
 
-.historias{
+    .noticias p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        font-size: 1.2rem; 
+    }
+
+    .noticias h4{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        font-size: 1.2rem;
+    }
+.historias {
     padding: 50px;
 }
     .historias h1{
@@ -443,4 +465,208 @@ h4{
         font-size: 1.2rem;
     }
 
+    
 
+ /*inicio slider*/
+ 
+ .post-link{
+    display: flex;
+    min-height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+ }
+
+ .content{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 30px;
+    max-width: auto;
+    margin: auto;
+ }
+
+ .post-img-1{
+    background: url(/img/noticia1.jpg);
+    width: 100%; 
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+ }
+
+ .post-img-2{
+    background: url(/img/noticia2.jpg);
+    width: 100%; 
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+ }
+
+ .post-img-3{
+    background: url(/img/noticia3.jpg);
+    width: 100%; 
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+ }
+
+ .post-img-4{
+    background: url(/img/noticia4.jpg);
+    width: 100%; 
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+ }
+
+ .post-img-5{
+    background: url(/img/noticia5.jpg);
+    width: 100%; 
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+ }
+
+ .post-img-6{
+    background: url(/img/noticia6.jpg);
+    width: 100%; 
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+ }
+
+ .post{
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 1);
+    /*overflow:hidden;*/
+    transition: .2s;
+ }
+
+ .post:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .15);
+ }
+
+ .post-header{
+    width: 100%;
+    height: 200px;
+    /*overflow:hidden;*/
+    cursor: pointer;
+ }
+
+ .post:hover .post-img-1,
+ .post:hover .post-img-2,
+ .post:hover .post-img-3,
+ .post:hover .post-img-4,
+ .post:hover .post-img-5,
+ .post:hover .post-img-6{
+    transform: scale(1,1);
+ }
+
+ .post-body{
+    padding: 15px;
+    text-align: center;
+ }
+
+ .post-body span{
+    display: inline-block;
+    color: #999;
+    margin-bottom: 10px;
+ }
+
+ .post-body h2{
+    margin-bottom: 15px;
+ }
+
+ .post-body p{
+    line-height: 1,5;
+    margin-bottom: 20px;
+
+ }
+
+ .post-body .post-link{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background:red;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+ }
+
+ .post-body .post-link:hover{
+    background: red;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+    transform: translate(-2px);
+ }
+
+ @media (max-width: 840px){
+    .content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px){
+    .content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+/*
+Aca probando el Newsletter
+*/
+.email-box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .email-box i{
+        background-color: #2f3542;
+        width: 40px;
+        line-height: 40px;
+    
+    }
+    
+    .tbox, .btn{
+        border: none;
+        outline: none;
+    }
+    
+    .tbox{
+        width: 0px;
+        transition: 0.6s;
+    }
+    .email-box:hover > .tbox,.tbox:focus{
+        width: 260px;
+        padding: 0 10px;
+    }
+    
+    .btn{
+        background-color: #2f3542;
+        color: white;
+        padding: 0 10px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+
+
+    /* Estilos para pantallas más pequeñas (móviles) */
+@media screen and (max-width: 600px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .item.encabezado2 {
+        font-size: 1.2rem;
+    }
+
+    /* ... Agrega otras reglas de estilo específicas para pantallas pequeñas aquí ... */
+}
