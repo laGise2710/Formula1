@@ -30,6 +30,13 @@
 
 }
 
+/*
+Esta es de ChatGPT
+*/
+.encabezado img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 .encabezado2 {
@@ -53,6 +60,16 @@
     object-fit: cover;
 
 }
+
+/*
+de ChatGPT
+*/
+.imagencard {
+    max-width: 100%;
+    height: auto;
+}
+
+
 
 .f2 {
     /*categorias f2 f3*/
@@ -229,6 +246,21 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+/*
+Esta es de chatGPT
+*/
+body {
+    font-size: 16px; /* Ajusta el tamaño de fuente base según tus preferencias */
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 1rem; /* Ajusta el espacio entre párrafos */
+}
+
+
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -315,6 +347,23 @@ nav a:hover {
 
   
 }
+
+
+/*
+De chat GPT
+*/
+.pie {
+    text-align: center;
+}
+
+
+
+.pie {
+    grid-area: 10/ 1/ 11/ 5;
+    /* 5/ 1/ span 1/ span3/*/ 
+}
+
+
 .primerfooter{
     text-align: left;
     border: #6c757d;
